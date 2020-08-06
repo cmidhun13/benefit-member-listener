@@ -1,0 +1,102 @@
+server:
+  port: 8025
+member:
+  # //For now we are comment against Standing data & ruleEngine later we uncomment
+  standingData:
+    pkgBySolIdUrl: http://dummy.restapiexample.com/api/v1/employees
+
+  ruleEngine:
+    #attributeUrl: http://18.223.161.111:8091/syzegee/v1/ruleengine/createproject
+    #    attributeUrl: http://18.223.161.111:8091/syzegee/v1/ruleengine/createproject
+    attributeUrl: http://ec2-18-188-157-35.us-east-2.compute.amazonaws.com:8090/syzegee/v1/ruleengine/createproject
+
+  customerService:
+    solicitationUrl: http://3.15.40.28:8080/api/v1/solicitation1
+
+  audit:
+    created-user: admin
+  mail:
+    SMTP_USERNAME: AKIA4DYGT4Q7F7QPCF3Y
+    SMTP_PASSWORD: BMz+dvWfVQXLtrXh8vG9aL98ecIsnkGQhj4Lb4DUGEaP
+    HOST: email-smtp.us-east-1.amazonaws.com
+    PORT: 587
+    FROMNAME: Szells
+    FROM: dev.worthy1@gmail.com
+
+  kafka:
+    #bootstrap-server: http://localhost:9092
+    bootstrap-server: 3.22.79.216:9092
+
+    consumer-groupId: members
+    membership:
+      create-topic: membership.create
+      update-topic: membership.update
+      delete-topic: membership.delete
+    poe:
+      topicName: poe.create
+    history:
+      #bootstrap-server: 10.222.113.227:9092
+      bootstrap-server:  3.22.79.216:9092
+      #  bootstrap-server: localhost:9092
+      topicName: benefit.history
+spring:
+  # according to local postgress
+  r2dbc:
+    url: r2dbc:postgresql://member.cyglulrs2sd6.us-east-2.rds.amazonaws.com:5432/member
+    username: postgres
+    password: postgres
+#logging:
+#  level:
+#    root: INFO
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG
+visibilityscope:
+  api:
+    ruleEngineUrl: 'http://ec2-18-188-157-35.us-east-2.compute.amazonaws.com:8090/syzegee/v1/ruleengine/createproject'
+    #ruleEngineUrl : 'http://18.223.161.111:8091/syzegee/v1/ruleengine/createproject'
+
+    #url: 'http://localhost:9002/api/benefits/v1/visibilityscope'
+
+    url: 'http://18.222.130.163:8080/studio/api'
+    readTimeOut: 5000
+    connectionTimeOut: 6000
+  validation:
+    uris: '/core/memberships/v1,/core/members'
+
+rest:
+  security:
+    enabled: true
+    api-matcher: /api/member-assets/**,/core/** #api matcher to be protected using oauth. specify your api url as per your project
+    #    cors.allowed-methods: GET,POST,PUT,PATCH,DELETE,OPTIONS
+    #    cors.max-age: 3600
+    issuer-uri: http://keycloak.dev.szellsservices.com/auth/realms/internal
+    resource.id: roles
+#keycloak configuration
+security:
+  oauth2:
+    client:
+      client-id: svc_benefit_membership_listener
+      client-secret: c25ba4ba-dd7a-4ce7-abf4-73f2e88f4fce
+      grant-type: client_credentials
+      user-authorization-uri: http://keycloak.dev.szellsservices.com/auth/realms/internal/protocol/openid-connect/token
+      access-token-uri: https://keycloak.dev.szellsservices.com/auth/realms/internal/protocol/openid-connect/token
+      scope: openid
+    resource:
+      token-info-uri: ${rest.security.issuer-uri}/protocol/openid-connect/token/introspect
+      user-info-uri: ${rest.security.issuer-uri}/protocol/openid-connect/userinfo
+      jwt.key-value: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn7W0KazGxTsC9BYae/1ZwWATcd9uWOxS12mzSBYduDKEhKl6tvXCUI9Iw5SocNoFRlZYILFvr6nwLNTQmfo5EGJs+kCXVf2bYWOWmfbcUW5enJAoGtXgAXQ9WpRpn/SZxPtJ06aSVet5y+sSGmtDWqHnCqcOcLcLE1juSUHWXG93U4XXpPOY64GWlddtQXZy34XIhwfv69UuBn51PlAVXagB/C/CoPD7Tbr6otGwoFOuHD5Yu9wSX4ArJqBxQ64yoyD5tZA8wt8PWsBrDIhXjxdI/qNzQEm1CNo21lPhlbLGqzc+Xx3Ge52t0qejrodrgaQIH0bL6fCorCNF5ajLAQIDAQAB
+
+requiredexecutiontimeinseconds: 10000
+
+springdoc:
+  api-docs:
+    path: '/benefit-membership-listener/api-docs'
+  swagger-ui:
+    path: '/benefit-membership-listener/swagger-ui.html'
+
+storage:
+  location: '/home/ubuntu/uploads'
