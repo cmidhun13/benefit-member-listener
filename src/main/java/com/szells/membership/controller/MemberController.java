@@ -111,11 +111,6 @@ public class MemberController {
         return memberService.processActivateMembersProfile(parameters)
                 .switchIfEmpty(Mono.just(new GenericResponse<>(false, HttpStatus.OK.value(), "Can't be activated.", null, null)));
     }
-    @PostMapping(value = "/demo")
-    public ResponseEntity<Object> demo(@RequestHeader(value = HttpHeaders.AUTHORIZATION) String authorization
-                                                 ) {
-        return memberService.getCustomer(authorization,"103");
-    }
     @PostMapping(value = "/createOrUpdate",
             produces = MediaType.APPLICATION_JSON_VALUE,
             consumes = MediaType.APPLICATION_JSON_VALUE)
