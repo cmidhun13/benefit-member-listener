@@ -1,31 +1,5 @@
 package com.szells.membership.controller;
 
-import com.szells.membership.adaptor.IMemberAdaptor;
-import com.szells.membership.adaptor.IMembershipAdaptor;
-import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.MemberDomain;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
-import com.szells.membership.exception.MemberNotFoundException;
-import com.szells.membership.processor.MembershipPreProcessor;
-import com.szells.membership.producer.EventPublisher;
-import com.szells.membership.producer.IEventPublisher;
-import com.szells.membership.service.IMemberService;
-import com.szells.membership.service.MemberService;
-import com.szells.membership.service.MemberServiceTest;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.test.context.junit4.SpringRunner;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.kafka.sender.KafkaSender;
-
 //@RunWith(SpringRunner.class)
 public class MemberControllerTest {
     /*private MemberController controller;

@@ -1,8 +1,8 @@
 package com.szells.membership.mapper;
 
 
-import com.szells.membership.domain.payload.MemberAttributeBean;
-import com.szells.membership.domain.request.AuditBean;
+import com.szells.membership.model.payload.MemberAttributeBean;
+import com.szells.membership.model.request.AuditBean;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

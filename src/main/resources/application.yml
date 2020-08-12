@@ -1,13 +1,10 @@
 server:
   port: 8025
 member:
-  # //For now we are comment against Standing data & ruleEngine later we uncomment
   standingData:
     pkgBySolIdUrl: http://dummy.restapiexample.com/api/v1/employees
 
   ruleEngine:
-    #attributeUrl: http://18.223.161.111:8091/syzegee/v1/ruleengine/createproject
-    #    attributeUrl: http://18.223.161.111:8091/syzegee/v1/ruleengine/createproject
     attributeUrl: http://ec2-18-188-157-35.us-east-2.compute.amazonaws.com:8090/syzegee/v1/ruleengine/createproject
 
   customerService:
@@ -26,7 +23,6 @@ member:
     FROM: dev.worthy1@gmail.com
 
   kafka:
-    #bootstrap-server: http://localhost:9092
     bootstrap-server: 3.22.79.216:9092
 
     consumer-groupId: members
@@ -37,12 +33,9 @@ member:
     poe:
       topicName: poe.create
     history:
-      #bootstrap-server: 10.222.113.227:9092
       bootstrap-server:  3.22.79.216:9092
-      #  bootstrap-server: localhost:9092
       topicName: benefit.history
 spring:
-  # according to local postgress
   r2dbc:
     url: r2dbc:postgresql://ruleengine.cyglulrs2sd6.us-east-2.rds.amazonaws.com:5432/member
     username: postgres
@@ -59,10 +52,6 @@ logging:
 visibilityscope:
   api:
     ruleEngineUrl: 'http://ec2-18-188-157-35.us-east-2.compute.amazonaws.com:8090/syzegee/v1/ruleengine/createproject'
-    #ruleEngineUrl : 'http://18.223.161.111:8091/syzegee/v1/ruleengine/createproject'
-
-    #url: 'http://localhost:9002/api/benefits/v1/visibilityscope'
-
     url: 'http://18.222.130.163:8080/studio/api'
     readTimeOut: 5000
     connectionTimeOut: 6000

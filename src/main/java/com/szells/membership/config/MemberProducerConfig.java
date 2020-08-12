@@ -1,8 +1,8 @@
 package com.szells.membership.config;
 
-import com.szells.membership.domain.payload.MembershipPayload;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
+import com.szells.membership.model.payload.MembershipPayload;
+import com.szells.membership.model.request.MemberSubscriptionHistory;
+import com.szells.membership.model.request.ProofOfEnrollment;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;

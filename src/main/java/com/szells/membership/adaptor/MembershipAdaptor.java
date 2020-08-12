@@ -1,7 +1,6 @@
 package com.szells.membership.adaptor;
 
-import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.payload.MembershipPayload;
+import com.szells.membership.model.payload.MembershipPayload;
 import com.szells.membership.entity.Membership;
 import com.szells.membership.exception.InvalidMembershipIdException;
 import com.szells.membership.mapper.IMembershipMapper;

@@ -1,7 +1,7 @@
 package com.szells.membership.mapper;
 
-import com.szells.membership.domain.MemberFulfillmentPref;
-import com.szells.membership.domain.MemberFulfillmentPrefPayload;
+import com.szells.membership.model.MemberFulfillmentPref;
+import com.szells.membership.model.MemberFulfillmentPrefPayload;
 import com.szells.membership.entity.MemberFulfillmentPreference;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

@@ -1,14 +1,12 @@
 package com.szells.membership.service;
 
-import com.szells.membership.domain.GenericResponse;
-import com.szells.membership.domain.payload.*;
-import com.szells.membership.domain.request.CreateUpdateMember;
-import com.szells.membership.domain.request.EnrollRequest;
-import com.szells.membership.domain.request.MemberMembershipOnBoardRequest;
-import com.szells.membership.domain.request.UpdateHashRequest;
-import com.szells.membership.entity.Member;
+import com.szells.membership.model.GenericResponse;
+import com.szells.membership.model.payload.*;
+import com.szells.membership.model.request.CreateUpdateMember;
+import com.szells.membership.model.request.EnrollRequest;
+import com.szells.membership.model.request.MemberMembershipOnBoardRequest;
+import com.szells.membership.model.request.UpdateHashRequest;
 import com.szells.util.domain.ServiceParameters;
-import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.http.ResponseEntity;
 import reactor.core.publisher.Mono;
 

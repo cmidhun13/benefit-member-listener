@@ -1,6 +1,6 @@
 package com.szells.membership.adaptor;
 
-import com.szells.membership.domain.BenefitPackageResponse;
+import com.szells.membership.model.BenefitPackageResponse;
 import com.szells.util.domain.RequestHeader;
 import com.szells.util.domain.RequestParameters;
 import com.szells.util.domain.ServiceParameters;

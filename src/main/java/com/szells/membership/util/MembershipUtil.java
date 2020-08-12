@@ -1,16 +1,12 @@
 package com.szells.membership.util;
 
-/*import com.szells.gce.common.eli.constants.LogLevelEnum;
-import com.szells.gce.common.eli.domain.LogMessageResponse;
-import com.szells.gce.common.eli.utility.LogMessageUtil;*/
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.MemberFulfillmentPref;
-import com.szells.membership.domain.MemberFulfillmentPrefPayload;
-import com.szells.membership.domain.payload.*;
-import com.szells.membership.domain.request.*;
+import com.szells.membership.model.MemberFulfillmentPref;
+import com.szells.membership.model.MemberFulfillmentPrefPayload;
+import com.szells.membership.model.payload.*;
+import com.szells.membership.model.request.*;
 import com.szells.util.domain.RequestHeader;
 import com.szells.util.domain.RequestPayload;
 import com.szells.util.domain.ServiceParameters;

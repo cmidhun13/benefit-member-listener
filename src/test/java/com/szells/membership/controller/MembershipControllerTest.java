@@ -1,33 +1,20 @@
 package com.szells.membership.controller;
 
 import com.szells.membership.adaptor.IMembershipAdaptor;
-import com.szells.membership.adaptor.RuleEngineAdaptor;
-import com.szells.membership.domain.MemberProfilePayloadTest;
-import com.szells.membership.domain.payload.MembershipPayloadTest;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
+import com.szells.membership.model.request.MemberSubscriptionHistory;
+import com.szells.membership.model.request.ProofOfEnrollment;
 import com.szells.membership.exception.InvalidMembershipIdException;
-import com.szells.membership.processor.MembershipPreProcessor;
 import com.szells.membership.producer.EventPublisher;
 import com.szells.membership.producer.IEventPublisher;
-import com.szells.membership.service.IMemberService;
-import com.szells.membership.service.MemberService;
-import com.szells.membership.service.MemberServiceTest;
-import com.szells.membership.service.MembershipService;
 import com.szells.util.cache.VisibilityScopeCache;
 import com.szells.util.domain.VisibilityScopeData;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.util.ReflectionTestUtils;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
 import reactor.kafka.sender.KafkaSender;
 
 @RunWith(SpringRunner.class)

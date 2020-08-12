@@ -1,9 +1,8 @@
 package com.szells.membership.producer;
 
-import com.szells.membership.domain.payload.BasePayload;
-import com.szells.membership.domain.request.MemberMembershipOnBoardRequest;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
+import com.szells.membership.model.payload.BasePayload;
+import com.szells.membership.model.request.MemberSubscriptionHistory;
+import com.szells.membership.model.request.ProofOfEnrollment;
 import com.szells.util.domain.ServiceParameters;
 import reactor.core.publisher.Mono;
 

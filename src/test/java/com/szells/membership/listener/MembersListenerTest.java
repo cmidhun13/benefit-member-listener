@@ -1,25 +1,5 @@
 package com.szells.membership.listener;
 
-import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.ResourceType;
-import com.szells.membership.domain.ResponseStatus;
-import com.szells.membership.domain.payload.ServiceResponse;
-import com.szells.membership.processor.IMembershipPreProcessor;
-import com.szells.membership.service.IMemberService;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.springframework.messaging.MessageHeaders;
-import org.springframework.test.context.junit4.SpringRunner;
-import reactor.core.publisher.Mono;
-
-import java.util.Collections;
-
-import static com.szells.membership.constants.Constants.*;
-
 //@RunWith(SpringRunner.class)
 public class MembersListenerTest {
 /*

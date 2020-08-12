@@ -1,11 +1,11 @@
 package com.szells.membership.util;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.payload.AttributeBean;
-import com.szells.membership.domain.payload.MemberAttributeBean;
-import com.szells.membership.domain.payload.MemberProfilePayload;
-import com.szells.membership.domain.payload.MembershipPayload;
-import com.szells.membership.domain.request.ProofOfEnrollment;
+import com.szells.membership.model.payload.AttributeBean;
+import com.szells.membership.model.payload.MemberAttributeBean;
+import com.szells.membership.model.payload.MemberProfilePayload;
+import com.szells.membership.model.payload.MembershipPayload;
+import com.szells.membership.model.request.ProofOfEnrollment;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

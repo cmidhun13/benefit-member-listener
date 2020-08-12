@@ -1,9 +1,9 @@
 package com.szells.membership.service;
 
-import com.szells.membership.domain.payload.DeactivateMembershipPayload;
-import com.szells.membership.domain.payload.MembershipPayload;
-import com.szells.membership.domain.payload.ServiceResponse;
-import com.szells.membership.domain.request.MemberMembershipOnBoardRequest;
+import com.szells.membership.model.payload.DeactivateMembershipPayload;
+import com.szells.membership.model.payload.MembershipPayload;
+import com.szells.membership.model.payload.ServiceResponse;
+import com.szells.membership.model.request.MemberMembershipOnBoardRequest;
 import com.szells.util.domain.ServiceParameters;
 import reactor.core.publisher.Mono;
 

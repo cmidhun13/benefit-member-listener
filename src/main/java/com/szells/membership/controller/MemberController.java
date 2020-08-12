@@ -2,12 +2,12 @@ package com.szells.membership.controller;
 
 import com.szells.membership.config.StorageProperties;
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.GenericResponse;
-import com.szells.membership.domain.payload.*;
-import com.szells.membership.domain.request.CreateUpdateMember;
-import com.szells.membership.domain.request.EnrollRequest;
-import com.szells.membership.domain.request.MemberMembershipOnBoardRequest;
-import com.szells.membership.domain.request.UpdateHashRequest;
+import com.szells.membership.model.GenericResponse;
+import com.szells.membership.model.payload.*;
+import com.szells.membership.model.request.CreateUpdateMember;
+import com.szells.membership.model.request.EnrollRequest;
+import com.szells.membership.model.request.MemberMembershipOnBoardRequest;
+import com.szells.membership.model.request.UpdateHashRequest;
 import com.szells.membership.processor.MembershipPreProcessor;
 import com.szells.membership.service.IFileStorageService;
 import com.szells.membership.service.IMemberService;
@@ -33,7 +33,6 @@ import org.springframework.web.multipart.MultipartFile;
 import reactor.core.publisher.Mono;
 
 import javax.validation.Valid;
-import java.util.Map;
 
 
 @Tag(description = "Publishes event for Member related create/update/delete actions and create's a record in INBOX table! ", name = "Member Controller")
@@ -45,12 +44,7 @@ public class MemberController {
 
     private final IMemberService memberService;
     private final IFileStorageService fileStorageService;
-    @GetMapping("/test")
-    public String test(){
-        String a="abskjskdjsk";
-        System.out.println("a "+a+" member");
-        return a;
-    }
+
     @ApiResponses(value = {
             @ApiResponse(responseCode = "400", description = "Bad Input Request",
                     content = @Content(array = @ArraySchema(schema = @Schema(implementation = ReturnDetail.class)))),

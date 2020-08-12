@@ -1,6 +1,6 @@
 package com.szells.membership.adaptor;
 
-import com.szells.membership.domain.request.EnrollRequest;
+import com.szells.membership.model.request.EnrollRequest;
 import com.szells.membership.entity.BenPkgSelectionMapping;
 import com.szells.membership.repository.IBenPkgSelectionMappingRepository;
 import lombok.RequiredArgsConstructor;

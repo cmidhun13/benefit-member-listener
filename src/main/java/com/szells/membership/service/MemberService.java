@@ -2,9 +2,9 @@ package com.szells.membership.service;
 
 import com.szells.membership.adaptor.*;
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.*;
-import com.szells.membership.domain.payload.*;
-import com.szells.membership.domain.request.*;
+import com.szells.membership.model.*;
+import com.szells.membership.model.payload.*;
+import com.szells.membership.model.request.*;
 import com.szells.membership.entity.*;
 import com.szells.membership.exception.InvalidMemberIdException;
 import com.szells.membership.exception.MemberNotFoundException;
@@ -45,7 +45,6 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
-import java.util.stream.Collectors;
 
 import static com.szells.membership.constants.Constants.*;
 

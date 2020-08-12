@@ -1,10 +1,10 @@
 package com.szells.membership.controller;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.GenericResponse;
-import com.szells.membership.domain.payload.DeactivateMembershipPayload;
-import com.szells.membership.domain.payload.MemberProfilePayload;
-import com.szells.membership.domain.payload.MembershipPayload;
+import com.szells.membership.model.GenericResponse;
+import com.szells.membership.model.payload.DeactivateMembershipPayload;
+import com.szells.membership.model.payload.MemberProfilePayload;
+import com.szells.membership.model.payload.MembershipPayload;
 import com.szells.membership.service.IMemberService;
 import com.szells.membership.service.IMembershipService;
 import com.szells.util.domain.RequestParameters;

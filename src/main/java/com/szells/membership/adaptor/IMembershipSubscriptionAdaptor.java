@@ -1,8 +1,8 @@
 package com.szells.membership.adaptor;
 
-import com.szells.membership.domain.MembershipSubscriptionDomain;
-import com.szells.membership.domain.payload.CancelRequestPayload;
-import com.szells.membership.domain.request.EnrollRequest;
+import com.szells.membership.model.MembershipSubscriptionDomain;
+import com.szells.membership.model.payload.CancelRequestPayload;
+import com.szells.membership.model.request.EnrollRequest;
 import com.szells.util.domain.ServiceParameters;
 import reactor.core.publisher.Mono;
 

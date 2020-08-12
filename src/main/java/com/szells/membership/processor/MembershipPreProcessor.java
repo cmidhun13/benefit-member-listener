@@ -1,8 +1,8 @@
 package com.szells.membership.processor;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.payload.CancelRequestPayload;
-import com.szells.membership.domain.payload.MemberProfilePayload;
+import com.szells.membership.model.payload.CancelRequestPayload;
+import com.szells.membership.model.payload.MemberProfilePayload;
 import com.szells.util.cache.VisibilityScopeCache;
 import com.szells.util.domain.*;
 import org.springframework.stereotype.Component;

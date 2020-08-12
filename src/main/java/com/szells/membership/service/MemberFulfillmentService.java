@@ -1,8 +1,8 @@
 package com.szells.membership.service;
 
 import com.szells.membership.adaptor.IMemberFulfillmentPrefAdaptor;
-import com.szells.membership.domain.MemberFulfillmentPref;
-import com.szells.membership.domain.MemberFulfillmentPrefPayload;
+import com.szells.membership.model.MemberFulfillmentPref;
+import com.szells.membership.model.MemberFulfillmentPrefPayload;
 import com.szells.membership.mapper.IFulfillmentPreferenceMapper;
 import com.szells.membership.util.MembershipUtil;
 import com.szells.util.domain.RequestPayload;

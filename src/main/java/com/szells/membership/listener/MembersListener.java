@@ -1,13 +1,13 @@
 package com.szells.membership.listener;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.ResourceType;
-import com.szells.membership.domain.ResponseStatus;
-import com.szells.membership.domain.payload.*;
-import com.szells.membership.domain.request.CreateUpdateMember;
-import com.szells.membership.domain.request.EnrollRequest;
-import com.szells.membership.domain.request.MemberMembershipOnBoardRequest;
-import com.szells.membership.domain.request.UpdateHashRequest;
+import com.szells.membership.model.ResourceType;
+import com.szells.membership.model.ResponseStatus;
+import com.szells.membership.model.payload.*;
+import com.szells.membership.model.request.CreateUpdateMember;
+import com.szells.membership.model.request.EnrollRequest;
+import com.szells.membership.model.request.MemberMembershipOnBoardRequest;
+import com.szells.membership.model.request.UpdateHashRequest;
 import com.szells.membership.processor.IMembershipPreProcessor;
 import com.szells.membership.service.IMemberService;
 import com.szells.membership.service.IMembershipService;

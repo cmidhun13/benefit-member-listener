@@ -1,7 +1,7 @@
 package com.szells.membership.listener;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.payload.ServiceResponse;
+import com.szells.membership.model.payload.ServiceResponse;
 import com.szells.membership.service.IMemberService;
 import com.szells.membership.service.IMembershipService;
 import com.szells.membership.util.MembershipUtil;

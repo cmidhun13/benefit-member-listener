@@ -1,41 +1,5 @@
 package com.szells.membership.service;
 
-import com.szells.membership.adaptor.*;
-import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.BenefitPackageResponse;
-import com.szells.membership.domain.payload.CancelRequestPayload;
-import com.szells.membership.domain.payload.MemberAttributeBean;
-import com.szells.membership.domain.payload.MemberProfilePayload;
-import com.szells.membership.domain.payload.ServiceResponse;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
-import com.szells.membership.entity.*;
-import com.szells.membership.mapper.*;
-import com.szells.membership.processor.MembershipPreProcessor;
-import com.szells.membership.producer.EventPublisher;
-import com.szells.membership.producer.IEventPublisher;
-import com.szells.membership.repository.*;
-import com.szells.util.cache.VisibilityScopeCache;
-import com.szells.util.domain.*;
-import org.apache.kafka.clients.producer.RecordMetadata;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.test.context.junit4.SpringRunner;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.kafka.sender.KafkaSender;
-import reactor.kafka.sender.SenderResult;
-
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.util.Calendar;
-import java.util.Date;
-
 //@RunWith(SpringRunner.class)
 public class MemberServiceTest {
     /*IMemberAdaptor memberMembershipAdaptor;

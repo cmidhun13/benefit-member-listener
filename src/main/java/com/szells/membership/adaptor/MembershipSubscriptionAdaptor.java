@@ -1,9 +1,9 @@
 package com.szells.membership.adaptor;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.MembershipSubscriptionDomain;
-import com.szells.membership.domain.payload.CancelRequestPayload;
-import com.szells.membership.domain.request.EnrollRequest;
+import com.szells.membership.model.MembershipSubscriptionDomain;
+import com.szells.membership.model.payload.CancelRequestPayload;
+import com.szells.membership.model.request.EnrollRequest;
 import com.szells.membership.entity.MembershipBenefitSubscription;
 import com.szells.membership.exception.MemberSaveException;
 import com.szells.membership.mapper.IMembershipSubscriptionMapper;

@@ -1,6 +1,6 @@
 package com.szells.membership.client;
 
-import com.szells.membership.domain.GenericResponse;
+import com.szells.membership.model.GenericResponse;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

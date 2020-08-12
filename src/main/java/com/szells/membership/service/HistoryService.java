@@ -1,11 +1,11 @@
 package com.szells.membership.service;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.MemberDomain;
-import com.szells.membership.domain.payload.MemberProfilePayload;
-import com.szells.membership.domain.payload.MembershipPayload;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.MetaData;
+import com.szells.membership.model.MemberDomain;
+import com.szells.membership.model.payload.MemberProfilePayload;
+import com.szells.membership.model.payload.MembershipPayload;
+import com.szells.membership.model.request.MemberSubscriptionHistory;
+import com.szells.membership.model.request.MetaData;
 import com.szells.membership.mapper.IAuditBeanMapper;
 import com.szells.membership.mapper.IMembershipMapper;
 import com.szells.membership.producer.IEventPublisher;

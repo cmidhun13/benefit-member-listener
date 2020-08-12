@@ -1,6 +1,6 @@
 package com.szells.membership.adaptor;
 
-import com.szells.membership.domain.payload.MembershipPayload;
+import com.szells.membership.model.payload.MembershipPayload;
 import com.szells.util.domain.ServiceParameters;
 import reactor.core.publisher.Mono;
 

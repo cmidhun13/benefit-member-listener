@@ -1,6 +1,6 @@
 package com.szells.membership.mapper;
 
-import com.szells.membership.domain.payload.MembershipPayload;
+import com.szells.membership.model.payload.MembershipPayload;
 import com.szells.membership.entity.Membership;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

@@ -1,10 +1,10 @@
 package com.szells.membership.adaptor;
 
 import com.szells.membership.constants.Constants;
-import com.szells.membership.domain.MemberDomain;
-import com.szells.membership.domain.payload.ActivateMemberPayload;
-import com.szells.membership.domain.payload.CancelRequestPayload;
-import com.szells.membership.domain.payload.MemberProfilePayload;
+import com.szells.membership.model.MemberDomain;
+import com.szells.membership.model.payload.ActivateMemberPayload;
+import com.szells.membership.model.payload.CancelRequestPayload;
+import com.szells.membership.model.payload.MemberProfilePayload;
 import com.szells.membership.exception.MemberNotFoundException;
 import com.szells.membership.exception.MemberSaveException;
 import com.szells.membership.mapper.IMemberMapper;

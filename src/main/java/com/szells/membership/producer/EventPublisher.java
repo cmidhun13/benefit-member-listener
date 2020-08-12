@@ -1,20 +1,16 @@
 package com.szells.membership.producer;
 
-import com.szells.membership.domain.payload.BasePayload;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
+import com.szells.membership.model.payload.BasePayload;
+import com.szells.membership.model.request.MemberSubscriptionHistory;
+import com.szells.membership.model.request.ProofOfEnrollment;
 import com.szells.membership.util.MembershipUtil;
 import com.szells.util.domain.ServiceParameters;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.header.internals.RecordHeader;
-import org.apache.kafka.common.serialization.StringSerializer;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.kafka.support.serializer.JsonSerializer;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import reactor.kafka.sender.KafkaSender;

@@ -1,6 +1,6 @@
 package com.szells.membership.service;
 
-import com.szells.membership.domain.MemberFulfillmentPrefPayload;
+import com.szells.membership.model.MemberFulfillmentPrefPayload;
 import com.szells.util.domain.ServiceParameters;
 import reactor.core.Disposable;
 

@@ -1,7 +1,7 @@
 package com.szells.membership.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.szells.membership.domain.GenericResponse;
+import com.szells.membership.model.GenericResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;

@@ -1,6 +1,6 @@
 package com.szells.membership.adaptor;
 
-import com.szells.membership.domain.BenefitPackageResponse;
+import com.szells.membership.model.BenefitPackageResponse;
 import com.szells.util.domain.ServiceParameters;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;

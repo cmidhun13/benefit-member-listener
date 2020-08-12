@@ -1,9 +1,9 @@
 package com.szells.membership.service;
 
-import com.szells.membership.domain.payload.MemberProfilePayload;
-import com.szells.membership.domain.payload.MembershipPayload;
-import com.szells.membership.domain.request.MemberSubscriptionHistory;
-import com.szells.membership.domain.request.ProofOfEnrollment;
+import com.szells.membership.model.payload.MemberProfilePayload;
+import com.szells.membership.model.payload.MembershipPayload;
+import com.szells.membership.model.request.MemberSubscriptionHistory;
+import com.szells.membership.model.request.ProofOfEnrollment;
 import com.szells.membership.mapper.IAuditBeanMapper;
 import com.szells.membership.mapper.IAuditBeanMapperImpl;
 import com.szells.membership.mapper.IMembershipMapper;
